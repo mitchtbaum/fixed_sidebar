@@ -1,0 +1,14 @@
+{% extends "!base/base.html" %}
+
+{% block head %}
+  {{ super() }}
+  {% include 'headers/fixed-sidebar.html' %}
+{% endblock %}
+
+{% block content %}
+  {% block sidebar %}
+    <div id="sidebar" class="pure-u-1-4">
+      {% include 'widgets/sidebar.html' %}
+    </div>
+  {% endblock%}
+{% endblock %}
